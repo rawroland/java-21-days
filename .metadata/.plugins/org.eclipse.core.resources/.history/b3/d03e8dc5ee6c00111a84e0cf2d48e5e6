@@ -1,0 +1,8 @@
+
+public class StringChecker {
+
+  public static void main(String[] args) {
+    String str = "Nobody ever went broke buying IBM";
+    System.out.println("The string is: " + str);
+  }
+}

@@ -1,0 +1,11 @@
+
+import java.util.StringTokenizer;
+public class TokenTester {
+  
+  public static void main(String[] args) {
+    
+    StringTokenizer st1, st2;
+    
+    String quote1 = new String("VIZY 2 -1/16");
+  }
+}
