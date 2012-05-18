@@ -9,6 +9,8 @@ import java.net.URL;
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import com.google.gson.Gson;
+
 public class SuggestsReader {
 
   private URL baseURL = null;
@@ -25,8 +27,10 @@ public class SuggestsReader {
   /**
    * @param args
    */
-  public static void main(String[] args) {
-    System.out.println("Suggestions: " + new SuggestsReader().getSuggestions());
+  public static void main(String[] args) throws JSONException{
+    Gson gson = new Gson();
+    JSONArray json = new JSONArray(new SuggestsReader().getSuggestions());
+    System.out.println("Suggestions: ");
   }
   
   private String getSuggestions() {
